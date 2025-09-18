@@ -1,6 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://dn322i51nkk66"]
+[gd_scene load_steps=20 format=3 uid="uid://dn322i51nkk66"]
 
-[ext_resource type="Texture2D" uid="uid://bdtx0o6gu20bb" path="res://icon.svg" id="1_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://ck7s55wkj46rw" path="res://Boss Icons/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp" id="1_k73cj"]
 [ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://spell_nature_riptide.jpg" id="2_hqns4"]
 [ext_resource type="Texture2D" uid="uid://c8q4lasrj5k6j" path="res://spell_nature_healingwavelesser.jpg" id="3_x0ka3"]
 [ext_resource type="Texture2D" uid="uid://bd4y3no2duqyw" path="res://inv_10_fishing_dragonislescoins_bronze.jpg" id="4_0h7mo"]
@@ -18,12 +18,14 @@
 [ext_resource type="Texture2D" uid="uid://b7jalh44udcik" path="res://spell_nature_lightning.jpg" id="13_0h7mo"]
 [ext_resource type="Script" uid="uid://c8f2c6txa7fib" path="res://barre_de_mana.gd" id="13_nr8wp"]
 [ext_resource type="Script" uid="uid://bgcwwmxtmbu5" path="res://script_manager.gd" id="15_d2bti"]
+[ext_resource type="Script" uid="uid://dtn74nh7rfyuk" path="res://barre_de_vie.gd" id="16_rjqkl"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="BossSprite" type="Sprite2D" parent="."]
-position = Vector2(162, 92)
-texture = ExtResource("1_ir8iy")
+position = Vector2(245, 138)
+scale = Vector2(1, 0.991)
+texture = ExtResource("1_k73cj")
 
 [node name="LesBoutons" type="Node2D" parent="."]
 
@@ -58,38 +60,38 @@ texture_normal = ExtResource("10_rjqkl")
 [node name="Statistiques" type="Node2D" parent="."]
 
 [node name="GoldIcon" type="Sprite2D" parent="Statistiques"]
-position = Vector2(47, 253)
+position = Vector2(45, 347)
 texture = ExtResource("4_0h7mo")
 
 [node name="CritIcon" type="Sprite2D" parent="Statistiques"]
-position = Vector2(47, 319)
+position = Vector2(45, 413)
 texture = ExtResource("9_k73cj")
 
 [node name="ManaIcon" type="Sprite2D" parent="Statistiques"]
-position = Vector2(47, 385)
+position = Vector2(45, 479)
 texture = ExtResource("8_hqns4")
 
 [node name="pieceOrText" type="RichTextLabel" parent="Statistiques"]
-offset_left = 77.0
-offset_top = 225.0
-offset_right = 318.0
-offset_bottom = 265.0
+offset_left = 78.0
+offset_top = 319.0
+offset_right = 319.0
+offset_bottom = 359.0
 text = "Pièces d'or : X"
 script = ExtResource("9_ta5nu")
 
 [node name="CritRateText" type="RichTextLabel" parent="Statistiques"]
-offset_left = 77.0
-offset_top = 291.0
-offset_right = 318.0
-offset_bottom = 331.0
+offset_left = 78.0
+offset_top = 385.0
+offset_right = 319.0
+offset_bottom = 425.0
 text = "Chance de Critique : X"
 script = ExtResource("10_flf07")
 
 [node name="ManaRegenText" type="RichTextLabel" parent="Statistiques"]
-offset_left = 77.0
-offset_top = 357.0
-offset_right = 318.0
-offset_bottom = 397.0
+offset_left = 78.0
+offset_top = 451.0
+offset_right = 319.0
+offset_bottom = 491.0
 text = "Régénération de Mana /s : X"
 script = ExtResource("11_k73cj")
 
@@ -133,10 +135,11 @@ texture_normal = ExtResource("13_0h7mo")
 [node name="Labels" type="Node2D" parent="."]
 
 [node name="BarreDeVie" type="ProgressBar" parent="Labels"]
-offset_left = 19.0
-offset_top = 180.0
-offset_right = 313.0
-offset_bottom = 207.0
+offset_left = 17.0
+offset_top = 272.0
+offset_right = 476.0
+offset_bottom = 299.0
+script = ExtResource("16_rjqkl")
 
 [node name="BarreDeMana" type="ProgressBar" parent="Labels"]
 offset_left = 611.0
