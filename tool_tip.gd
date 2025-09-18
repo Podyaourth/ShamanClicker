@@ -4,6 +4,7 @@ extends TextEdit
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$".".visible = false
+	$".".position = Vector2(611.0, 341.0)
 	pass # Replace with function body.
 
 
@@ -14,11 +15,17 @@ func _process(delta: float) -> void:
 
 func _on_remous_button_mouse_entered() -> void:
 	$".".visible = true
+	# Pour plus tard : tween tooltip slide
+	#var tween = create_tween()
+	#tween.tween_property(self,"position",Vector2(611.0, 341.0),0.5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_SINE)
 	$".".text = GlobalMachins.RemousToolTip
 	pass # Replace with function body.
 
 
 func _on_remous_button_mouse_exited() -> void:
+	# Pour plus tard : tween tooltip slide
+	#var tween = create_tween()
+	#tween.tween_property(self,"position",Vector2(1163.0, 341.0),0.5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_SINE)
 	$".".visible = false
 	pass # Replace with function body.
 

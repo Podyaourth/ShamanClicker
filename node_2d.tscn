@@ -22,9 +22,9 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="ToolTip" type="TextEdit" parent="."]
-offset_left = 611.0
+offset_left = 1163.0
 offset_top = 341.0
-offset_right = 1147.0
+offset_right = 1699.0
 offset_bottom = 643.0
 script = ExtResource("12_x0ka3")
 
