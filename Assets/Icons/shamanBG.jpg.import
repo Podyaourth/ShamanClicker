@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c66xiokp33op8"
-path="res://.godot/imported/inv_elemental_mote_mana.jpg-3f777cb1c9e3e88d788ab971297cdc94.ctex"
+uid="uid://dcgt5k71viaq"
+path="res://.godot/imported/shamanBG.jpg-67aff4cc79bc02c0426b650778fae93a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inv_elemental_mote_mana.jpg"
-dest_files=["res://.godot/imported/inv_elemental_mote_mana.jpg-3f777cb1c9e3e88d788ab971297cdc94.ctex"]
+source_file="res://Assets/Icons/shamanBG.jpg"
+dest_files=["res://.godot/imported/shamanBG.jpg-67aff4cc79bc02c0426b650778fae93a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd4y3no2duqyw"
-path="res://.godot/imported/inv_10_fishing_dragonislescoins_bronze.jpg-bf10dc4edf42c7c67e380d5aaee69920.ctex"
+uid="uid://cf3lkophstehy"
+path="res://.godot/imported/inv_potion_red.jpg-45d72c5e56b123a125003e7a50cdb21e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inv_10_fishing_dragonislescoins_bronze.jpg"
-dest_files=["res://.godot/imported/inv_10_fishing_dragonislescoins_bronze.jpg-bf10dc4edf42c7c67e380d5aaee69920.ctex"]
+source_file="res://Assets/Icons/inv_potion_red.jpg"
+dest_files=["res://.godot/imported/inv_potion_red.jpg-45d72c5e56b123a125003e7a50cdb21e.ctex"]
 
 [params]
 

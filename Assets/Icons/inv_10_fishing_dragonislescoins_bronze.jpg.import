@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck7s55wkj46rw"
-path="res://.godot/imported/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp-8cc346b1b302c9f0f4073b099b037b58.ctex"
+uid="uid://bd4y3no2duqyw"
+path="res://.godot/imported/inv_10_fishing_dragonislescoins_bronze.jpg-80ece7c89db489d6023e75df8754f0ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Boss Icons/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp"
-dest_files=["res://.godot/imported/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp-8cc346b1b302c9f0f4073b099b037b58.ctex"]
+source_file="res://Assets/Icons/inv_10_fishing_dragonislescoins_bronze.jpg"
+dest_files=["res://.godot/imported/inv_10_fishing_dragonislescoins_bronze.jpg-80ece7c89db489d6023e75df8754f0ed.ctex"]
 
 [params]
 

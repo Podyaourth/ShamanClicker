@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7jalh44udcik"
-path="res://.godot/imported/spell_nature_lightning.jpg-bc9c8fe991b02f1e1b4126435d019cff.ctex"
+uid="uid://cevlqfkbs76he"
+path="res://.godot/imported/spell_shaman_giftearthmother.jpg-efc0759c5a2bf87cee7be02f4963d5f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spell_nature_lightning.jpg"
-dest_files=["res://.godot/imported/spell_nature_lightning.jpg-bc9c8fe991b02f1e1b4126435d019cff.ctex"]
+source_file="res://Assets/Icons/spell_shaman_giftearthmother.jpg"
+dest_files=["res://.godot/imported/spell_shaman_giftearthmother.jpg-efc0759c5a2bf87cee7be02f4963d5f4.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cevlqfkbs76he"
-path="res://.godot/imported/spell_shaman_giftearthmother.jpg-e751734633d86ad67cc28f830d9f01c5.ctex"
+uid="uid://ck7s55wkj46rw"
+path="res://.godot/imported/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp-b9ec67871f27ef8a0cda02afbc0276fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spell_shaman_giftearthmother.jpg"
-dest_files=["res://.godot/imported/spell_shaman_giftearthmother.jpg-e751734633d86ad67cc28f830d9f01c5.ctex"]
+source_file="res://Assets/Boss Icons/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp"
+dest_files=["res://.godot/imported/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp-b9ec67871f27ef8a0cda02afbc0276fc.ctex"]
 
 [params]
 

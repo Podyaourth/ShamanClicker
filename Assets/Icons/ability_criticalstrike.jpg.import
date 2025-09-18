@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nkclhylr7lbu"
-path="res://.godot/imported/ability_criticalstrike.jpg-7be5674eb3e16cb34a2509f56fcf048f.ctex"
+path="res://.godot/imported/ability_criticalstrike.jpg-ae3664740ada2f8b348312d1aed8c359.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ability_criticalstrike.jpg"
-dest_files=["res://.godot/imported/ability_criticalstrike.jpg-7be5674eb3e16cb34a2509f56fcf048f.ctex"]
+source_file="res://Assets/Icons/ability_criticalstrike.jpg"
+dest_files=["res://.godot/imported/ability_criticalstrike.jpg-ae3664740ada2f8b348312d1aed8c359.ctex"]
 
 [params]
 

@@ -107,3 +107,5 @@ func earthliving_used() :
 	else :
 		return 0
 	
+func display_healing_value() :
+	pass

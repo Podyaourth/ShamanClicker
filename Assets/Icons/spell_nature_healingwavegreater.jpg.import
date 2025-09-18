@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf3lkophstehy"
-path="res://.godot/imported/inv_potion_red.jpg-9ddbdb8f391d1f5399a774a526be88e5.ctex"
+uid="uid://78vywauspm46"
+path="res://.godot/imported/spell_nature_healingwavegreater.jpg-6e99b4c69cc5d28e5aba2b07cab1e2eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inv_potion_red.jpg"
-dest_files=["res://.godot/imported/inv_potion_red.jpg-9ddbdb8f391d1f5399a774a526be88e5.ctex"]
+source_file="res://Assets/Icons/spell_nature_healingwavegreater.jpg"
+dest_files=["res://.godot/imported/spell_nature_healingwavegreater.jpg-6e99b4c69cc5d28e5aba2b07cab1e2eb.ctex"]
 
 [params]
 

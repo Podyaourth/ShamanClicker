@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8q4lasrj5k6j"
-path="res://.godot/imported/spell_nature_healingwavelesser.jpg-0792d3dbff0603911d984305f2d62ee1.ctex"
+uid="uid://chvone8gbssp3"
+path="res://.godot/imported/ui_profession_enchanting.jpg-bc0d83af3fc3b72ff0cb5d9c47b3c4be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spell_nature_healingwavelesser.jpg"
-dest_files=["res://.godot/imported/spell_nature_healingwavelesser.jpg-0792d3dbff0603911d984305f2d62ee1.ctex"]
+source_file="res://Assets/Icons/ui_profession_enchanting.jpg"
+dest_files=["res://.godot/imported/ui_profession_enchanting.jpg-bc0d83af3fc3b72ff0cb5d9c47b3c4be.ctex"]
 
 [params]
 

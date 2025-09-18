@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpy5s3wj4chyw"
-path="res://.godot/imported/spell_nature_healingway.jpg-22900cdce44c26f674582ea77b5a57b6.ctex"
+uid="uid://cx64g8tbmdqq8"
+path="res://.godot/imported/spell_nature_riptide.jpg-4ea198db34936ccb1083b7db4f39590c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spell_nature_healingway.jpg"
-dest_files=["res://.godot/imported/spell_nature_healingway.jpg-22900cdce44c26f674582ea77b5a57b6.ctex"]
+source_file="res://Assets/Icons/spell_nature_riptide.jpg"
+dest_files=["res://.godot/imported/spell_nature_riptide.jpg-4ea198db34936ccb1083b7db4f39590c.ctex"]
 
 [params]
 

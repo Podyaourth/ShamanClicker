@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcgt5k71viaq"
-path="res://.godot/imported/shamanBG.jpg-622978a01d4c4bab1531039d7b40f24b.ctex"
+uid="uid://cnoq5ukkkdkn"
+path="res://.godot/imported/inv_potion_72.jpg-113ace694904715d9b4eaa7f59540566.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://shamanBG.jpg"
-dest_files=["res://.godot/imported/shamanBG.jpg-622978a01d4c4bab1531039d7b40f24b.ctex"]
+source_file="res://Assets/Icons/inv_potion_72.jpg"
+dest_files=["res://.godot/imported/inv_potion_72.jpg-113ace694904715d9b4eaa7f59540566.ctex"]
 
 [params]
 

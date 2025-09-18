@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnoq5ukkkdkn"
-path="res://.godot/imported/inv_potion_72.jpg-a6dd499c714fad50a2f74af57b5041a2.ctex"
+uid="uid://bpy5s3wj4chyw"
+path="res://.godot/imported/spell_nature_healingway.jpg-5090d3b89141641d64494dd2ec4cd9ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inv_potion_72.jpg"
-dest_files=["res://.godot/imported/inv_potion_72.jpg-a6dd499c714fad50a2f74af57b5041a2.ctex"]
+source_file="res://Assets/Icons/spell_nature_healingway.jpg"
+dest_files=["res://.godot/imported/spell_nature_healingway.jpg-5090d3b89141641d64494dd2ec4cd9ec.ctex"]
 
 [params]
 
