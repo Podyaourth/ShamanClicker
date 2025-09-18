@@ -151,7 +151,7 @@ texture_normal = ExtResource("13_0h7mo")
 [node name="Labels" type="Node2D" parent="."]
 
 [node name="BarreDeVie" type="ProgressBar" parent="Labels"]
-modulate = Color(1, 0, 0, 1)
+modulate = Color(0, 1, 0, 1)
 offset_left = 17.0
 offset_top = 272.0
 offset_right = 476.0
