@@ -1,7 +1,5 @@
 extends Node
 
-var RemousToolTip : String = "Remous : fais des trucs forts.\nCoût en Mana : X"
-var AffluxToolTip : String = "Afflux : fais des trucs plus forts.\nCoût en Mana :"
 
 # Variables Mana
 var current_mana: int = 50
@@ -15,19 +13,26 @@ var currernt_golds : int = 0
 # Variables Critical
 var current_crit_chance : float = 0.0
 
-var mana_cost_healing_surge: int = 15
-var mana_cost_healing_wave: int = 5
+var mana_cost_healing_surge: int = 10
+var mana_cost_healing_wave: int = 10
 var mana_cost_riptide: int = 10
+var mana_cost_earthliving : int = 10
 
 
 # Varaiables Healing
 
 # Variables valeur de heal
 
-var healing_surge_value: int = 20
+var healing_surge_value: int = 10
 var riptide_value : int = 10
-var healing_wave_value : int = 50
-var earthliving_value : int = 5
+var healing_wave_value : int = 10
+var earthliving_value : int = 10
+
+
+var RemousToolTip : String = "Remous : fais des trucs forts.\nCoût en Mana : "+var_to_str(mana_cost_riptide)
+var AffluxToolTip : String = "Afflux : fais des trucs plus forts.\nCoût en Mana : "+var_to_str(mana_cost_healing_surge)
+var HealingWaveTooltip : String = "Vague de soins : pas mal en vrai.\nCoût en Mana : "+var_to_str(mana_cost_healing_wave)
+var EarthlivingTooltip : String = "Viveterre : pas mal mais bon.\nCoût en Mana : "+var_to_str(mana_cost_earthliving)
 
 
 # Called when the node enters the scene tree for the first time.
@@ -41,18 +46,26 @@ func _ready():
 	
 func regen_mana():
 	if current_mana < mana_max:
-		current_mana = min(current_mana + mana_regen, mana_max)
+		current_mana += mana_regen
 		
 		
 func mana_use(cost) -> bool:
-	if current_mana > cost:
-		current_mana -= cost
+	if current_mana >= cost:
+		current_mana = current_mana - cost
 		return true
 	return false
 	
 func spell_used(spell_name: String, cost: int):
 	if mana_use(cost):
-		spell_used(spell_name, cost)
+		match spell_name :
+			"healing_wave" :
+				print("vague de soin")
+			"healing_surge" :
+				print("Afflux de soin")
+			"riptide" :
+				print("Remous")
+			"earthliving" :
+				print("Viveterre")
 		print("Mana restante : ", current_mana)
 	else: 
 		print("Pas assez de mana pour ", spell_name, " !")

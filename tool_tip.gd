@@ -31,3 +31,25 @@ func _on_afflux_button_mouse_entered() -> void:
 func _on_afflux_button_mouse_exited() -> void:
 	$".".visible = false
 	pass # Replace with function body.
+
+
+func _on_vague_button_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.HealingWaveTooltip
+	pass # Replace with function body.
+
+
+func _on_vague_button_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
+
+
+func _on_viveterre_button_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.EarthlivingTooltip
+	pass # Replace with function body.
+
+
+func _on_viveterre_button_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
