@@ -33,7 +33,13 @@ var RemousToolTip : String = "Remous : fais des trucs forts.\nCoût en Mana : "+
 var AffluxToolTip : String = "Afflux : fais des trucs plus forts.\nCoût en Mana : "+var_to_str(mana_cost_healing_surge)
 var HealingWaveTooltip : String = "Vague de soins : pas mal en vrai.\nCoût en Mana : "+var_to_str(mana_cost_healing_wave)
 var EarthlivingTooltip : String = "Viveterre : pas mal mais bon.\nCoût en Mana : "+var_to_str(mana_cost_earthliving)
-
+var GoldsTooltip : String = "Votre argent. \nSert à acheter au magasin. \nObtenu en soignant les boss."
+var BuyManaRegenTooltip : String = "Acheter de la Régénération de Mana permanente.\nPrix exponentiel.\nPrix actuel : X"
+var BuyCritTooltip : String = "Acheter des chances de Critique permanentes.\nPrix exponentiel.\nPrix actuel : X"
+var CritFlaskTooltip : String = "Acheter un flacon de Critique.\nAugmente les chances de Critique de X pendant X.\nPrix : X"
+var ManaPotTooltip : String = "Acheter une potion de Mana.\nRend 50% de votre Mana instantanément.\nPrix : X"
+var ManaRegenTooltip : String = "Votre régénération de Mana passive."
+var CritTooltip : String = "Vos chances actuelles d'effectuer un coup critique."
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

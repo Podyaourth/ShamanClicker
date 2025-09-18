@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dn322i51nkk66"]
+[gd_scene load_steps=19 format=3 uid="uid://dn322i51nkk66"]
 
 [ext_resource type="Texture2D" uid="uid://ck7s55wkj46rw" path="res://Boss Icons/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp" id="1_k73cj"]
 [ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://spell_nature_riptide.jpg" id="2_hqns4"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://cf3lkophstehy" path="res://inv_potion_red.jpg" id="7_ta5nu"]
 [ext_resource type="Texture2D" uid="uid://nkclhylr7lbu" path="res://ability_criticalstrike.jpg" id="8_flf07"]
 [ext_resource type="Texture2D" uid="uid://c66xiokp33op8" path="res://inv_elemental_mote_mana.jpg" id="8_hqns4"]
-[ext_resource type="Texture2D" uid="uid://chvone8gbssp3" path="res://ui_profession_enchanting.jpg" id="9_k73cj"]
 [ext_resource type="Script" uid="uid://m3gpf2abch7g" path="res://piece_or_text.gd" id="9_ta5nu"]
 [ext_resource type="Script" uid="uid://cnyl33mjkjyr1" path="res://crit_rate_text.gd" id="10_flf07"]
 [ext_resource type="Texture2D" uid="uid://cevlqfkbs76he" path="res://spell_shaman_giftearthmother.jpg" id="10_rjqkl"]
@@ -21,6 +20,13 @@
 [ext_resource type="Script" uid="uid://dtn74nh7rfyuk" path="res://barre_de_vie.gd" id="16_rjqkl"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="ToolTip" type="TextEdit" parent="."]
+offset_left = 611.0
+offset_top = 341.0
+offset_right = 1147.0
+offset_bottom = 643.0
+script = ExtResource("12_x0ka3")
 
 [node name="BossSprite" type="Sprite2D" parent="."]
 position = Vector2(245, 138)
@@ -59,17 +65,26 @@ texture_normal = ExtResource("10_rjqkl")
 
 [node name="Statistiques" type="Node2D" parent="."]
 
-[node name="GoldIcon" type="Sprite2D" parent="Statistiques"]
-position = Vector2(45, 347)
-texture = ExtResource("4_0h7mo")
+[node name="GoldIcon" type="TextureButton" parent="Statistiques"]
+offset_left = 17.0
+offset_top = 319.0
+offset_right = 73.0
+offset_bottom = 375.0
+texture_normal = ExtResource("4_0h7mo")
 
-[node name="CritIcon" type="Sprite2D" parent="Statistiques"]
-position = Vector2(45, 413)
-texture = ExtResource("9_k73cj")
+[node name="CritIcon" type="TextureButton" parent="Statistiques"]
+offset_left = 17.0
+offset_top = 385.0
+offset_right = 73.0
+offset_bottom = 441.0
+texture_normal = ExtResource("8_flf07")
 
-[node name="ManaIcon" type="Sprite2D" parent="Statistiques"]
-position = Vector2(45, 479)
-texture = ExtResource("8_hqns4")
+[node name="ManaIcon" type="TextureButton" parent="Statistiques"]
+offset_left = 17.0
+offset_top = 451.0
+offset_right = 73.0
+offset_bottom = 507.0
+texture_normal = ExtResource("8_hqns4")
 
 [node name="pieceOrText" type="RichTextLabel" parent="Statistiques"]
 offset_left = 78.0
@@ -155,13 +170,6 @@ offset_right = 606.0
 offset_bottom = 68.0
 text = "MANA :"
 
-[node name="ToolTip" type="TextEdit" parent="."]
-offset_left = 611.0
-offset_top = 341.0
-offset_right = 1147.0
-offset_bottom = 643.0
-script = ExtResource("12_x0ka3")
-
 [node name="ScriptManager" type="Node2D" parent="."]
 script = ExtResource("15_d2bti")
 
@@ -177,5 +185,19 @@ script = ExtResource("15_d2bti")
 [connection signal="mouse_entered" from="LesBoutons/ViveterreButton" to="ToolTip" method="_on_viveterre_button_mouse_entered"]
 [connection signal="mouse_exited" from="LesBoutons/ViveterreButton" to="ToolTip" method="_on_viveterre_button_mouse_exited"]
 [connection signal="pressed" from="LesBoutons/ViveterreButton" to="ScriptManager" method="_on_viveterre_button_pressed"]
+[connection signal="mouse_entered" from="Statistiques/GoldIcon" to="ToolTip" method="_on_gold_icon_mouse_entered"]
+[connection signal="mouse_exited" from="Statistiques/GoldIcon" to="ToolTip" method="_on_gold_icon_mouse_exited"]
+[connection signal="mouse_entered" from="Statistiques/CritIcon" to="ToolTip" method="_on_crit_icon_mouse_entered"]
+[connection signal="mouse_exited" from="Statistiques/CritIcon" to="ToolTip" method="_on_crit_icon_mouse_exited"]
+[connection signal="mouse_entered" from="Statistiques/ManaIcon" to="ToolTip" method="_on_mana_icon_mouse_entered"]
+[connection signal="mouse_exited" from="Statistiques/ManaIcon" to="ToolTip" method="_on_mana_icon_mouse_exited"]
+[connection signal="mouse_entered" from="Magasin/ManaPotButton" to="ToolTip" method="_on_mana_pot_button_mouse_entered"]
+[connection signal="mouse_exited" from="Magasin/ManaPotButton" to="ToolTip" method="_on_mana_pot_button_mouse_exited"]
 [connection signal="pressed" from="Magasin/ManaPotButton" to="ScriptManager" method="_on_mana_pot_button_pressed"]
+[connection signal="mouse_entered" from="Magasin/CritFlaskButton" to="ToolTip" method="_on_crit_flask_button_mouse_entered"]
+[connection signal="mouse_exited" from="Magasin/CritFlaskButton" to="ToolTip" method="_on_crit_flask_button_mouse_exited"]
+[connection signal="mouse_entered" from="Magasin/CritButton" to="ToolTip" method="_on_crit_button_mouse_entered"]
+[connection signal="mouse_exited" from="Magasin/CritButton" to="ToolTip" method="_on_crit_button_mouse_exited"]
+[connection signal="mouse_entered" from="Magasin/ManaRegenButton" to="ToolTip" method="_on_mana_regen_button_mouse_entered"]
+[connection signal="mouse_exited" from="Magasin/ManaRegenButton" to="ToolTip" method="_on_mana_regen_button_mouse_exited"]
 [connection signal="pressed" from="Magasin/ManaRegenButton" to="ScriptManager" method="_on_mana_regen_button_pressed"]

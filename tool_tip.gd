@@ -53,3 +53,80 @@ func _on_viveterre_button_mouse_entered() -> void:
 func _on_viveterre_button_mouse_exited() -> void:
 	$".".visible = false
 	pass # Replace with function body.
+
+
+func _on_gold_icon_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.GoldsTooltip
+	pass # Replace with function body.
+
+
+func _on_gold_icon_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
+
+
+func _on_crit_icon_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.CritTooltip
+	pass # Replace with function body.
+
+
+func _on_crit_icon_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
+
+
+func _on_mana_icon_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.ManaRegenTooltip
+	pass # Replace with function body.
+
+
+func _on_mana_icon_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
+
+
+func _on_mana_pot_button_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.ManaPotTooltip
+	pass # Replace with function body.
+
+
+func _on_mana_pot_button_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
+
+
+func _on_crit_flask_button_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.CritFlaskTooltip
+	pass # Replace with function body.
+
+
+func _on_crit_flask_button_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
+
+
+func _on_crit_button_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.BuyCritTooltip
+	pass # Replace with function body.
+
+
+func _on_crit_button_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
+
+
+func _on_mana_regen_button_mouse_entered() -> void:
+	$".".visible = true
+	$".".text = GlobalMachins.BuyManaRegenTooltip
+	pass # Replace with function body.
+
+
+func _on_mana_regen_button_mouse_exited() -> void:
+	$".".visible = false
+	pass # Replace with function body.
