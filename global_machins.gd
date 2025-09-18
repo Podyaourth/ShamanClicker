@@ -4,7 +4,7 @@ var RemousToolTip : String = "Remous : fais des trucs forts.\nCoût en Mana : X"
 var AffluxToolTip : String = "Afflux : fais des trucs plus forts.\nCoût en Mana :"
 
 # Variables Mana
-var current_mana: int = 100
+var current_mana: int = 50
 var mana_max: int = 100
 var mana_regen: int = 1
 var crit_mana_regen: int = 5
@@ -12,7 +12,12 @@ var crit_mana_regen: int = 5
 var mana_cost_healing_surge: int = 15
 var mana_cost_healing_wave: int = 5
 var mana_cost_riptide: int = 10
-var healing_value: int 
+
+# Variables valeur de heal
+var healing_surge_value: int = 20
+var riptide_value : int = 10
+var healing_wave_value : int = 50
+var earthliving_value : int = 5
 
 
 # Called when the node enters the scene tree for the first time.
@@ -43,11 +48,14 @@ func spell_used(spell_name: String, cost: int):
 		print("Pas assez de mana pour ", spell_name, " !")
 		
 func healing_surge_used():
-	spell_used("healing_surge", mana_cost_healing_surge) 
+	spell_used("healing_surge", mana_cost_healing_surge)
+	return healing_surge_value
 
 func healing_wave_used():
-	spell_used("healing_wave", mana_cost_healing_wave)	
+	spell_used("healing_wave", mana_cost_healing_wave)
+	return healing_wave_value
 
 func riptide_used():
-	spell_used("riptide", mana_cost_riptide)	
+	spell_used("riptide", mana_cost_riptide)
+	return riptide_value
 	
