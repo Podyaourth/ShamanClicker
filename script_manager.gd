@@ -29,3 +29,17 @@ func _on_viveterre_button_pressed() -> void:
 
 func _on_mana_pot_button_pressed() -> void:
 	GlobalMachins.current_mana += 50
+
+
+func _on_mana_regen_button_pressed() -> void:
+	print("INNVER")
+	GlobalMachins.mana_regen += 5
+	var timer = Timer.new()
+	timer.one_shot = true
+	timer.wait_time = 5.0
+	timer.autostart = true
+	timer.timeout.connect(innervOMG)
+	add_child(timer)
+
+func innervOMG() :
+	GlobalMachins.mana_regen -= 5

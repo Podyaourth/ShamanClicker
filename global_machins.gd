@@ -8,7 +8,7 @@ var mana_regen: int = 1
 var crit_mana_regen: int = 5
 
 # Variables Golds
-var currernt_golds : int = 0
+var current_golds : int = 0
 
 # Variables Critical
 var current_crit_chance : float = 0.0

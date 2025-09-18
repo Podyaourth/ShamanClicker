@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dn322i51nkk66"]
+[gd_scene load_steps=19 format=3 uid="uid://dn322i51nkk66"]
 
 [ext_resource type="Texture2D" uid="uid://bdtx0o6gu20bb" path="res://icon.svg" id="1_ir8iy"]
 [ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://spell_nature_riptide.jpg" id="2_hqns4"]
@@ -10,7 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://nkclhylr7lbu" path="res://ability_criticalstrike.jpg" id="8_flf07"]
 [ext_resource type="Texture2D" uid="uid://c66xiokp33op8" path="res://inv_elemental_mote_mana.jpg" id="8_hqns4"]
 [ext_resource type="Texture2D" uid="uid://chvone8gbssp3" path="res://ui_profession_enchanting.jpg" id="9_k73cj"]
+[ext_resource type="Script" uid="uid://m3gpf2abch7g" path="res://piece_or_text.gd" id="9_ta5nu"]
+[ext_resource type="Script" uid="uid://cnyl33mjkjyr1" path="res://crit_rate_text.gd" id="10_flf07"]
 [ext_resource type="Texture2D" uid="uid://cevlqfkbs76he" path="res://spell_shaman_giftearthmother.jpg" id="10_rjqkl"]
+[ext_resource type="Script" uid="uid://b1lljrw17065d" path="res://mana_regen_text.gd" id="11_k73cj"]
 [ext_resource type="Script" uid="uid://c27sdawrco57t" path="res://tool_tip.gd" id="12_x0ka3"]
 [ext_resource type="Texture2D" uid="uid://b7jalh44udcik" path="res://spell_nature_lightning.jpg" id="13_0h7mo"]
 [ext_resource type="Script" uid="uid://c8f2c6txa7fib" path="res://barre_de_mana.gd" id="13_nr8wp"]
@@ -72,6 +75,7 @@ offset_top = 225.0
 offset_right = 318.0
 offset_bottom = 265.0
 text = "Pièces d'or : X"
+script = ExtResource("9_ta5nu")
 
 [node name="CritRateText" type="RichTextLabel" parent="Statistiques"]
 offset_left = 77.0
@@ -79,6 +83,7 @@ offset_top = 291.0
 offset_right = 318.0
 offset_bottom = 331.0
 text = "Chance de Critique : X"
+script = ExtResource("10_flf07")
 
 [node name="ManaRegenText" type="RichTextLabel" parent="Statistiques"]
 offset_left = 77.0
@@ -86,6 +91,7 @@ offset_top = 357.0
 offset_right = 318.0
 offset_bottom = 397.0
 text = "Régénération de Mana /s : X"
+script = ExtResource("11_k73cj")
 
 [node name="Magasin" type="Node2D" parent="."]
 
@@ -169,3 +175,4 @@ script = ExtResource("15_d2bti")
 [connection signal="mouse_exited" from="LesBoutons/ViveterreButton" to="ToolTip" method="_on_viveterre_button_mouse_exited"]
 [connection signal="pressed" from="LesBoutons/ViveterreButton" to="ScriptManager" method="_on_viveterre_button_pressed"]
 [connection signal="pressed" from="Magasin/ManaPotButton" to="ScriptManager" method="_on_mana_pot_button_pressed"]
+[connection signal="pressed" from="Magasin/ManaRegenButton" to="ScriptManager" method="_on_mana_regen_button_pressed"]
