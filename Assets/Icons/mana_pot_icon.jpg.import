@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcgt5k71viaq"
-path="res://.godot/imported/shamanBG.jpg-67aff4cc79bc02c0426b650778fae93a.ctex"
+uid="uid://cnoq5ukkkdkn"
+path="res://.godot/imported/mana_pot_icon.jpg-ad601713b41ff1dd02b9b7b735acb57f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/shamanBG.jpg"
-dest_files=["res://.godot/imported/shamanBG.jpg-67aff4cc79bc02c0426b650778fae93a.ctex"]
+source_file="res://Assets/Icons/mana_pot_icon.jpg"
+dest_files=["res://.godot/imported/mana_pot_icon.jpg-ad601713b41ff1dd02b9b7b735acb57f.ctex"]
 
 [params]
 

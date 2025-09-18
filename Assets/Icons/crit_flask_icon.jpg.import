@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chvone8gbssp3"
-path="res://.godot/imported/ui_profession_enchanting.jpg-bc0d83af3fc3b72ff0cb5d9c47b3c4be.ctex"
+uid="uid://cf3lkophstehy"
+path="res://.godot/imported/crit_flask_icon.jpg-4f68dc664af57ec8fd48549c79261902.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/ui_profession_enchanting.jpg"
-dest_files=["res://.godot/imported/ui_profession_enchanting.jpg-bc0d83af3fc3b72ff0cb5d9c47b3c4be.ctex"]
+source_file="res://Assets/Icons/crit_flask_icon.jpg"
+dest_files=["res://.godot/imported/crit_flask_icon.jpg-4f68dc664af57ec8fd48549c79261902.ctex"]
 
 [params]
 

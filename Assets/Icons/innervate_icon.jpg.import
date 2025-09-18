@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cevlqfkbs76he"
-path="res://.godot/imported/spell_shaman_giftearthmother.jpg-efc0759c5a2bf87cee7be02f4963d5f4.ctex"
+uid="uid://b7jalh44udcik"
+path="res://.godot/imported/innervate_icon.jpg-59fb42574f3a6bd3a81880645f876745.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/spell_shaman_giftearthmother.jpg"
-dest_files=["res://.godot/imported/spell_shaman_giftearthmother.jpg-efc0759c5a2bf87cee7be02f4963d5f4.ctex"]
+source_file="res://Assets/Icons/innervate_icon.jpg"
+dest_files=["res://.godot/imported/innervate_icon.jpg-59fb42574f3a6bd3a81880645f876745.ctex"]
 
 [params]
 

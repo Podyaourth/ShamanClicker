@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8q4lasrj5k6j"
-path="res://.godot/imported/spell_nature_healingwavelesser.jpg-50313662731df171ea1520e8969ecac1.ctex"
+uid="uid://bpy5s3wj4chyw"
+path="res://.godot/imported/healing_surge_icon.jpg-d3aaff79311805968500a2d7a85a5f15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/spell_nature_healingwavelesser.jpg"
-dest_files=["res://.godot/imported/spell_nature_healingwavelesser.jpg-50313662731df171ea1520e8969ecac1.ctex"]
+source_file="res://Assets/Icons/healing_surge_icon.jpg"
+dest_files=["res://.godot/imported/healing_surge_icon.jpg-d3aaff79311805968500a2d7a85a5f15.ctex"]
 
 [params]
 

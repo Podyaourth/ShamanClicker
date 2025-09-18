@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nkclhylr7lbu"
-path="res://.godot/imported/ability_criticalstrike.jpg-ae3664740ada2f8b348312d1aed8c359.ctex"
+uid="uid://cx64g8tbmdqq8"
+path="res://.godot/imported/riptide_icon.jpg-54427309d22e021e579d4a3192fdf970.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/ability_criticalstrike.jpg"
-dest_files=["res://.godot/imported/ability_criticalstrike.jpg-ae3664740ada2f8b348312d1aed8c359.ctex"]
+source_file="res://Assets/Icons/riptide_icon.jpg"
+dest_files=["res://.godot/imported/riptide_icon.jpg-54427309d22e021e579d4a3192fdf970.ctex"]
 
 [params]
 

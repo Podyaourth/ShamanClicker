@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c66xiokp33op8"
-path="res://.godot/imported/inv_elemental_mote_mana.jpg-31d0f0fd620101cef7280f0ed93fdae5.ctex"
+uid="uid://chvone8gbssp3"
+path="res://.godot/imported/crit_ability_icon.jpg-c2c7072655fe666b5fdec7123d3e422a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/inv_elemental_mote_mana.jpg"
-dest_files=["res://.godot/imported/inv_elemental_mote_mana.jpg-31d0f0fd620101cef7280f0ed93fdae5.ctex"]
+source_file="res://Assets/Icons/crit_ability_icon.jpg"
+dest_files=["res://.godot/imported/crit_ability_icon.jpg-c2c7072655fe666b5fdec7123d3e422a.ctex"]
 
 [params]
 

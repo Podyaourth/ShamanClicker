@@ -1,24 +1,25 @@
-[gd_scene load_steps=21 format=3 uid="uid://dn322i51nkk66"]
+[gd_scene load_steps=22 format=3 uid="uid://dn322i51nkk66"]
 
 [ext_resource type="Script" uid="uid://c27sdawrco57t" path="res://Scripts/tool_tip.gd" id="1_1nvmp"]
 [ext_resource type="Texture2D" uid="uid://ck7s55wkj46rw" path="res://Assets/Boss Icons/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp" id="2_el1jj"]
-[ext_resource type="Texture2D" uid="uid://bpy5s3wj4chyw" path="res://Assets/Icons/spell_nature_healingway.jpg" id="3_03fgm"]
-[ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://Assets/Icons/spell_nature_riptide.jpg" id="4_uu23e"]
-[ext_resource type="Texture2D" uid="uid://c8q4lasrj5k6j" path="res://Assets/Icons/spell_nature_healingwavelesser.jpg" id="5_ny2ev"]
-[ext_resource type="Texture2D" uid="uid://cevlqfkbs76he" path="res://Assets/Icons/spell_shaman_giftearthmother.jpg" id="6_jiy1d"]
-[ext_resource type="Texture2D" uid="uid://bd4y3no2duqyw" path="res://Assets/Icons/inv_10_fishing_dragonislescoins_bronze.jpg" id="7_ud1os"]
-[ext_resource type="Texture2D" uid="uid://nkclhylr7lbu" path="res://Assets/Icons/ability_criticalstrike.jpg" id="8_fpmp2"]
-[ext_resource type="Texture2D" uid="uid://c66xiokp33op8" path="res://Assets/Icons/inv_elemental_mote_mana.jpg" id="9_xiv05"]
+[ext_resource type="Texture2D" uid="uid://bpy5s3wj4chyw" path="res://Assets/Icons/healing_surge_icon.jpg" id="3_03fgm"]
+[ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://Assets/Icons/riptide_icon.jpg" id="4_uu23e"]
+[ext_resource type="Texture2D" uid="uid://c8q4lasrj5k6j" path="res://Assets/Icons/healing_wave_icon2.jpg" id="5_ny2ev"]
+[ext_resource type="Texture2D" uid="uid://cevlqfkbs76he" path="res://Assets/Icons/earthliving_icon.jpg" id="6_jiy1d"]
+[ext_resource type="Texture2D" uid="uid://bd4y3no2duqyw" path="res://Assets/Icons/golds_icon.jpg" id="7_ud1os"]
+[ext_resource type="Texture2D" uid="uid://chvone8gbssp3" path="res://Assets/Icons/crit_ability_icon.jpg" id="8_fpmp2"]
+[ext_resource type="Texture2D" uid="uid://c66xiokp33op8" path="res://Assets/Icons/mana_regen_ability_icon.jpg" id="9_xiv05"]
 [ext_resource type="Script" uid="uid://m3gpf2abch7g" path="res://Scripts/piece_or_text.gd" id="10_uybdb"]
 [ext_resource type="Script" uid="uid://cnyl33mjkjyr1" path="res://Scripts/crit_rate_text.gd" id="11_uh8xd"]
 [ext_resource type="Script" uid="uid://b1lljrw17065d" path="res://Scripts/mana_regen_text.gd" id="12_x5e5l"]
-[ext_resource type="Texture2D" uid="uid://cnoq5ukkkdkn" path="res://Assets/Icons/inv_potion_72.jpg" id="13_bwylj"]
-[ext_resource type="Texture2D" uid="uid://cf3lkophstehy" path="res://Assets/Icons/inv_potion_red.jpg" id="14_opb2v"]
-[ext_resource type="Texture2D" uid="uid://b7jalh44udcik" path="res://Assets/Icons/spell_nature_lightning.jpg" id="15_mrm6q"]
+[ext_resource type="Texture2D" uid="uid://cnoq5ukkkdkn" path="res://Assets/Icons/mana_pot_icon.jpg" id="13_bwylj"]
+[ext_resource type="Texture2D" uid="uid://cf3lkophstehy" path="res://Assets/Icons/crit_flask_icon.jpg" id="14_opb2v"]
+[ext_resource type="Texture2D" uid="uid://nkclhylr7lbu" path="res://Assets/Icons/crit_buy_icon.jpg" id="15_el1jj"]
+[ext_resource type="Texture2D" uid="uid://b7jalh44udcik" path="res://Assets/Icons/innervate_icon.jpg" id="15_mrm6q"]
 [ext_resource type="Script" uid="uid://dtn74nh7rfyuk" path="res://Scripts/barre_de_vie.gd" id="16_ffkfv"]
 [ext_resource type="Script" uid="uid://c8f2c6txa7fib" path="res://Scripts/barre_de_mana.gd" id="17_uqbbf"]
 [ext_resource type="Script" uid="uid://bgcwwmxtmbu5" path="res://Scripts/script_manager.gd" id="18_b7g8c"]
-[ext_resource type="Texture2D" uid="uid://dcgt5k71viaq" path="res://Assets/Icons/shamanBG.jpg" id="19_pxds5"]
+[ext_resource type="Texture2D" uid="uid://dcgt5k71viaq" path="res://Assets/Icons/shaman_background.jpg" id="19_pxds5"]
 [ext_resource type="Script" uid="uid://cdgu82j7e364k" path="res://Scripts/rich_text_label.gd" id="20_5lvh4"]
 
 [node name="Node2D" type="Node2D"]
@@ -140,7 +141,7 @@ offset_left = 149.0
 offset_top = 572.0
 offset_right = 205.0
 offset_bottom = 628.0
-texture_normal = ExtResource("8_fpmp2")
+texture_normal = ExtResource("15_el1jj")
 
 [node name="ManaRegenButton" type="TextureButton" parent="Magasin"]
 offset_left = 215.0

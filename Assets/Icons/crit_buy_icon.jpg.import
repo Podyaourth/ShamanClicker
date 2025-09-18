@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7jalh44udcik"
-path="res://.godot/imported/spell_nature_lightning.jpg-95ed6c9cd593adf78808c56d1af809e2.ctex"
+uid="uid://nkclhylr7lbu"
+path="res://.godot/imported/crit_buy_icon.jpg-d06dcfc0dde577af48d57a08552c00a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/spell_nature_lightning.jpg"
-dest_files=["res://.godot/imported/spell_nature_lightning.jpg-95ed6c9cd593adf78808c56d1af809e2.ctex"]
+source_file="res://Assets/Icons/crit_buy_icon.jpg"
+dest_files=["res://.godot/imported/crit_buy_icon.jpg-d06dcfc0dde577af48d57a08552c00a7.ctex"]
 
 [params]
 

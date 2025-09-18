@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpy5s3wj4chyw"
-path="res://.godot/imported/spell_nature_healingway.jpg-5090d3b89141641d64494dd2ec4cd9ec.ctex"
+uid="uid://c66xiokp33op8"
+path="res://.godot/imported/mana_regen_ability_icon.jpg-42dae2a2e625b7eab3e081cb6baffb94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Icons/spell_nature_healingway.jpg"
-dest_files=["res://.godot/imported/spell_nature_healingway.jpg-5090d3b89141641d64494dd2ec4cd9ec.ctex"]
+source_file="res://Assets/Icons/mana_regen_ability_icon.jpg"
+dest_files=["res://.godot/imported/mana_regen_ability_icon.jpg-42dae2a2e625b7eab3e081cb6baffb94.ctex"]
 
 [params]
 
