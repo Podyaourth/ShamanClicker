@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dn322i51nkk66"]
+[gd_scene load_steps=14 format=3 uid="uid://dn322i51nkk66"]
 
 [ext_resource type="Texture2D" uid="uid://bdtx0o6gu20bb" path="res://icon.svg" id="1_ir8iy"]
 [ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://spell_nature_riptide.jpg" id="2_hqns4"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://chvone8gbssp3" path="res://ui_profession_enchanting.jpg" id="9_k73cj"]
 [ext_resource type="Texture2D" uid="uid://cevlqfkbs76he" path="res://spell_shaman_giftearthmother.jpg" id="10_rjqkl"]
 [ext_resource type="Script" uid="uid://c27sdawrco57t" path="res://tool_tip.gd" id="12_x0ka3"]
+[ext_resource type="Texture2D" uid="uid://b7jalh44udcik" path="res://spell_nature_lightning.jpg" id="13_0h7mo"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -82,7 +83,7 @@ offset_left = 77.0
 offset_top = 357.0
 offset_right = 318.0
 offset_bottom = 397.0
-text = "Chance de Critique : X"
+text = "Régénération de Mana /s : X"
 
 [node name="Magasin" type="Node2D" parent="."]
 
@@ -132,6 +133,10 @@ offset_top = 341.0
 offset_right = 1147.0
 offset_bottom = 643.0
 script = ExtResource("12_x0ka3")
+
+[node name="SpellNatureLightning" type="Sprite2D" parent="."]
+position = Vector2(243, 600)
+texture = ExtResource("13_0h7mo")
 
 [connection signal="mouse_entered" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_entered"]
 [connection signal="mouse_exited" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_exited"]
