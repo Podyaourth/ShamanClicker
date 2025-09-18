@@ -55,7 +55,7 @@ func mana_use(cost) -> bool:
 		return true
 	return false
 	
-func spell_used(spell_name: String, cost: int):
+func spell_used(spell_name: String, cost: int) -> bool :
 	if mana_use(cost):
 		match spell_name :
 			"healing_wave" :
@@ -67,18 +67,32 @@ func spell_used(spell_name: String, cost: int):
 			"earthliving" :
 				print("Viveterre")
 		print("Mana restante : ", current_mana)
+		return true
 	else: 
 		print("Pas assez de mana pour ", spell_name, " !")
+		return false
 
 func healing_surge_used():
-	spell_used("healing_surge", mana_cost_healing_surge)
-	return healing_surge_value
+	if spell_used("healing_surge", mana_cost_healing_surge) :
+		return healing_surge_value
+	else :
+		return 0
 
 func healing_wave_used():
-	spell_used("healing_wave", mana_cost_healing_wave)
-	return healing_wave_value
+	if spell_used("healing_wave", mana_cost_healing_wave) :
+		return healing_wave_value
+	else : 
+		return 0
 
 func riptide_used():
-	spell_used("riptide", mana_cost_riptide)
-	return riptide_value
+	if spell_used("riptide", mana_cost_riptide) :
+		return riptide_value
+	else :
+		return 0
+
+func earthliving_used() :
+	if spell_used("earthliving", mana_cost_earthliving) :
+		return earthliving_value
+	else :
+		return 0
 	
