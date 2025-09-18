@@ -13,8 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://cevlqfkbs76he" path="res://spell_shaman_giftearthmother.jpg" id="10_rjqkl"]
 [ext_resource type="Script" uid="uid://c27sdawrco57t" path="res://tool_tip.gd" id="12_x0ka3"]
 [ext_resource type="Texture2D" uid="uid://b7jalh44udcik" path="res://spell_nature_lightning.jpg" id="13_0h7mo"]
-[ext_resource type="Script" path="res://barre_de_mana.gd" id="13_nr8wp"]
-[ext_resource type="Script" path="res://script_manager.gd" id="15_d2bti"]
+[ext_resource type="Script" uid="uid://c8f2c6txa7fib" path="res://barre_de_mana.gd" id="13_nr8wp"]
+[ext_resource type="Script" uid="uid://bgcwwmxtmbu5" path="res://script_manager.gd" id="15_d2bti"]
 
 [node name="Node2D" type="Node2D"]
 
