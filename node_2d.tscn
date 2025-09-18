@@ -1,0 +1,139 @@
+[gd_scene load_steps=13 format=3 uid="uid://dn322i51nkk66"]
+
+[ext_resource type="Texture2D" uid="uid://bdtx0o6gu20bb" path="res://icon.svg" id="1_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://spell_nature_riptide.jpg" id="2_hqns4"]
+[ext_resource type="Texture2D" uid="uid://c8q4lasrj5k6j" path="res://spell_nature_healingwavelesser.jpg" id="3_x0ka3"]
+[ext_resource type="Texture2D" uid="uid://bd4y3no2duqyw" path="res://inv_10_fishing_dragonislescoins_bronze.jpg" id="4_0h7mo"]
+[ext_resource type="Texture2D" uid="uid://bpy5s3wj4chyw" path="res://spell_nature_healingway.jpg" id="5_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://cnoq5ukkkdkn" path="res://inv_potion_72.jpg" id="6_d2bti"]
+[ext_resource type="Texture2D" uid="uid://cf3lkophstehy" path="res://inv_potion_red.jpg" id="7_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://nkclhylr7lbu" path="res://ability_criticalstrike.jpg" id="8_flf07"]
+[ext_resource type="Texture2D" uid="uid://c66xiokp33op8" path="res://inv_elemental_mote_mana.jpg" id="8_hqns4"]
+[ext_resource type="Texture2D" uid="uid://chvone8gbssp3" path="res://ui_profession_enchanting.jpg" id="9_k73cj"]
+[ext_resource type="Texture2D" uid="uid://cevlqfkbs76he" path="res://spell_shaman_giftearthmother.jpg" id="10_rjqkl"]
+[ext_resource type="Script" uid="uid://c27sdawrco57t" path="res://tool_tip.gd" id="12_x0ka3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BossSprite" type="Sprite2D" parent="."]
+position = Vector2(162, 92)
+texture = ExtResource("1_ir8iy")
+
+[node name="LesBoutons" type="Node2D" parent="."]
+
+[node name="AffluxButton" type="TextureButton" parent="LesBoutons"]
+offset_left = 611.0
+offset_top = 142.0
+offset_right = 667.0
+offset_bottom = 198.0
+texture_normal = ExtResource("5_nr8wp")
+
+[node name="RemousButton" type="TextureButton" parent="LesBoutons"]
+offset_left = 611.0
+offset_top = 76.0
+offset_right = 667.0
+offset_bottom = 132.0
+texture_normal = ExtResource("2_hqns4")
+
+[node name="VagueButton" type="TextureButton" parent="LesBoutons"]
+offset_left = 611.0
+offset_top = 208.0
+offset_right = 667.0
+offset_bottom = 264.0
+texture_normal = ExtResource("3_x0ka3")
+
+[node name="ViveterreButton" type="TextureButton" parent="LesBoutons"]
+offset_left = 611.0
+offset_top = 274.0
+offset_right = 667.0
+offset_bottom = 330.0
+texture_normal = ExtResource("10_rjqkl")
+
+[node name="Statistiques" type="Node2D" parent="."]
+
+[node name="GoldIcon" type="Sprite2D" parent="Statistiques"]
+position = Vector2(47, 253)
+texture = ExtResource("4_0h7mo")
+
+[node name="CritIcon" type="Sprite2D" parent="Statistiques"]
+position = Vector2(47, 319)
+texture = ExtResource("9_k73cj")
+
+[node name="ManaIcon" type="Sprite2D" parent="Statistiques"]
+position = Vector2(47, 385)
+texture = ExtResource("8_hqns4")
+
+[node name="pieceOrText" type="RichTextLabel" parent="Statistiques"]
+offset_left = 77.0
+offset_top = 225.0
+offset_right = 318.0
+offset_bottom = 265.0
+text = "Pièces d'or : X"
+
+[node name="CritRateText" type="RichTextLabel" parent="Statistiques"]
+offset_left = 77.0
+offset_top = 291.0
+offset_right = 318.0
+offset_bottom = 331.0
+text = "Chance de Critique : X"
+
+[node name="ManaRegenText" type="RichTextLabel" parent="Statistiques"]
+offset_left = 77.0
+offset_top = 357.0
+offset_right = 318.0
+offset_bottom = 397.0
+text = "Chance de Critique : X"
+
+[node name="Magasin" type="Node2D" parent="."]
+
+[node name="MagasinText" type="TextEdit" parent="Magasin"]
+offset_left = 17.0
+offset_top = 527.0
+offset_right = 111.0
+offset_bottom = 562.0
+text = "MAGASIN :"
+
+[node name="ManaPotIcon" type="Sprite2D" parent="Magasin"]
+position = Vector2(45, 600)
+texture = ExtResource("6_d2bti")
+
+[node name="CritFlaskIcon" type="Sprite2D" parent="Magasin"]
+position = Vector2(111, 600)
+texture = ExtResource("7_ta5nu")
+
+[node name="CritIcon" type="Sprite2D" parent="Magasin"]
+position = Vector2(177, 600)
+texture = ExtResource("8_flf07")
+
+[node name="Labels" type="Node2D" parent="."]
+
+[node name="BarreDeVie" type="ProgressBar" parent="Labels"]
+offset_left = 19.0
+offset_top = 180.0
+offset_right = 313.0
+offset_bottom = 207.0
+
+[node name="BarreDeMana" type="ProgressBar" parent="Labels"]
+offset_left = 611.0
+offset_top = 38.0
+offset_right = 1111.0
+offset_bottom = 65.0
+
+[node name="ManaText" type="TextEdit" parent="Labels"]
+offset_left = 540.0
+offset_top = 32.0
+offset_right = 606.0
+offset_bottom = 68.0
+text = "MANA :"
+
+[node name="ToolTip" type="TextEdit" parent="."]
+offset_left = 611.0
+offset_top = 341.0
+offset_right = 1147.0
+offset_bottom = 643.0
+script = ExtResource("12_x0ka3")
+
+[connection signal="mouse_entered" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_entered"]
+[connection signal="mouse_exited" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_exited"]
+[connection signal="mouse_entered" from="LesBoutons/RemousButton" to="ToolTip" method="_on_remous_button_mouse_entered"]
+[connection signal="mouse_exited" from="LesBoutons/RemousButton" to="ToolTip" method="_on_remous_button_mouse_exited"]
