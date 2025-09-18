@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dn322i51nkk66"]
+[gd_scene load_steps=16 format=3 uid="uid://dn322i51nkk66"]
 
 [ext_resource type="Texture2D" uid="uid://bdtx0o6gu20bb" path="res://icon.svg" id="1_ir8iy"]
 [ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://spell_nature_riptide.jpg" id="2_hqns4"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://c27sdawrco57t" path="res://tool_tip.gd" id="12_x0ka3"]
 [ext_resource type="Texture2D" uid="uid://b7jalh44udcik" path="res://spell_nature_lightning.jpg" id="13_0h7mo"]
 [ext_resource type="Script" uid="uid://c8f2c6txa7fib" path="res://barre_de_mana.gd" id="13_nr8wp"]
+[ext_resource type="Script" uid="uid://bgcwwmxtmbu5" path="res://script_manager.gd" id="15_d2bti"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -152,7 +153,15 @@ offset_right = 1147.0
 offset_bottom = 643.0
 script = ExtResource("12_x0ka3")
 
+[node name="ScriptManager" type="Node2D" parent="."]
+script = ExtResource("15_d2bti")
+
 [connection signal="mouse_entered" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_entered"]
 [connection signal="mouse_exited" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_exited"]
+[connection signal="pressed" from="LesBoutons/AffluxButton" to="ScriptManager" method="_on_afflux_button_pressed"]
 [connection signal="mouse_entered" from="LesBoutons/RemousButton" to="ToolTip" method="_on_remous_button_mouse_entered"]
 [connection signal="mouse_exited" from="LesBoutons/RemousButton" to="ToolTip" method="_on_remous_button_mouse_exited"]
+[connection signal="pressed" from="LesBoutons/RemousButton" to="ScriptManager" method="_on_remous_button_pressed"]
+[connection signal="pressed" from="LesBoutons/VagueButton" to="ScriptManager" method="_on_vague_button_pressed"]
+[connection signal="pressed" from="LesBoutons/ViveterreButton" to="ScriptManager" method="_on_viveterre_button_pressed"]
+[connection signal="pressed" from="Magasin/ManaPotButton" to="ScriptManager" method="_on_mana_pot_button_pressed"]
