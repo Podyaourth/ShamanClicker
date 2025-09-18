@@ -12,19 +12,19 @@ func _process(delta: float) -> void:
 
 
 func _on_afflux_button_pressed() -> void:
-	$"../Labels/BarreDeVie".value = GlobalMachins.healing_surge_used()
+	$"../Labels/BarreDeVie".value += GlobalMachins.healing_surge_used()
 
 
 func _on_remous_button_pressed() -> void:
-	$"../Labels/BarreDeVie".value = GlobalMachins.riptide_used()
+	$"../Labels/BarreDeVie".value += GlobalMachins.riptide_used()
 
 
 func _on_vague_button_pressed() -> void:
-	$"../Labels/BarreDeVie".value = GlobalMachins.healing_wave_used()
+	$"../Labels/BarreDeVie".value += GlobalMachins.healing_wave_used()
 
 
 func _on_viveterre_button_pressed() -> void:
-	$"../Labels/BarreDeVie".value = GlobalMachins.earthliving_used()
+	$"../Labels/BarreDeVie".value += GlobalMachins.earthliving_used()
 
 
 func _on_mana_pot_button_pressed() -> void:
