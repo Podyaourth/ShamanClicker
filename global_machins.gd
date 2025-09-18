@@ -29,7 +29,7 @@ var healing_wave_value : int = 10
 var earthliving_value : int = 10
 
 
-var RemousToolTip : String = "Remous : fais des trucs forts.\nCoût en Mana : "+var_to_str(mana_cost_riptide)
+var RemousToolTip : String = "Remous : fais des trucs forts.\nValeur du soin : "+var_to_str(riptide_value) +"Coût en Mana : "+var_to_str(mana_cost_riptide)
 var AffluxToolTip : String = "Afflux : fais des trucs plus forts.\nCoût en Mana : "+var_to_str(mana_cost_healing_surge)
 var HealingWaveTooltip : String = "Vague de soins : pas mal en vrai.\nCoût en Mana : "+var_to_str(mana_cost_healing_wave)
 var EarthlivingTooltip : String = "Viveterre : pas mal mais bon.\nCoût en Mana : "+var_to_str(mana_cost_earthliving)
