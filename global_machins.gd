@@ -50,6 +50,11 @@ func _ready():
 	timer.timeout.connect(regen_mana)
 	add_child(timer)
 	
+func _process(delta: float) -> void:
+	if current_mana >= mana_max :
+		current_mana = mana_max
+		
+
 func regen_mana():
 	if current_mana < mana_max:
 		current_mana += mana_regen
