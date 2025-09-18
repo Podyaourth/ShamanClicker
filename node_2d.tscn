@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dn322i51nkk66"]
+[gd_scene load_steps=20 format=3 uid="uid://dn322i51nkk66"]
 
 [ext_resource type="Texture2D" uid="uid://ck7s55wkj46rw" path="res://Boss Icons/Ysera%2C_l%3FAspect_d%3F%3Fmeraude_HS.webp" id="1_k73cj"]
 [ext_resource type="Texture2D" uid="uid://cx64g8tbmdqq8" path="res://spell_nature_riptide.jpg" id="2_hqns4"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" uid="uid://c8f2c6txa7fib" path="res://barre_de_mana.gd" id="13_nr8wp"]
 [ext_resource type="Script" uid="uid://bgcwwmxtmbu5" path="res://script_manager.gd" id="15_d2bti"]
 [ext_resource type="Script" uid="uid://dtn74nh7rfyuk" path="res://barre_de_vie.gd" id="16_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://dcgt5k71viaq" path="res://shamanBG.jpg" id="19_rjqkl"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -150,6 +151,7 @@ texture_normal = ExtResource("13_0h7mo")
 [node name="Labels" type="Node2D" parent="."]
 
 [node name="BarreDeVie" type="ProgressBar" parent="Labels"]
+modulate = Color(1, 0, 0, 1)
 offset_left = 17.0
 offset_top = 272.0
 offset_right = 476.0
@@ -157,6 +159,7 @@ offset_bottom = 299.0
 script = ExtResource("16_rjqkl")
 
 [node name="BarreDeMana" type="ProgressBar" parent="Labels"]
+modulate = Color(0, 0, 1, 1)
 offset_left = 611.0
 offset_top = 38.0
 offset_right = 1111.0
@@ -172,6 +175,14 @@ text = "MANA :"
 
 [node name="ScriptManager" type="Node2D" parent="."]
 script = ExtResource("15_d2bti")
+
+[node name="ShamanBg" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.294118)
+show_behind_parent = true
+visibility_layer = 2
+position = Vector2(573, 324)
+texture = ExtResource("19_rjqkl")
+metadata/_edit_lock_ = true
 
 [connection signal="mouse_entered" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_entered"]
 [connection signal="mouse_exited" from="LesBoutons/AffluxButton" to="ToolTip" method="_on_afflux_button_mouse_exited"]
