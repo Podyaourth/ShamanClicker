@@ -4,7 +4,7 @@ var RemousToolTip : String = "Remous : fais des trucs forts.\nCoût en Mana : X"
 var AffluxToolTip : String = "Afflux : fais des trucs plus forts.\nCoût en Mana :"
 
 # Variables Mana
-var current_mana: int = 100
+var current_mana: int = 50
 var mana_max: int = 100
 var mana_regen: int = 1
 var crit_mana_regen: int = 5
@@ -19,7 +19,11 @@ var mana_cost_healing_surge: int = 15
 var mana_cost_healing_wave: int = 5
 var mana_cost_riptide: int = 10
 
+<<<<<<< HEAD
 # Varaiables Healing
+=======
+# Variables valeur de heal
+>>>>>>> 8435f08cc8e199a8a465046cc89dfbc7e44ba2bd
 var healing_surge_value: int = 20
 var riptide_value : int = 10
 var healing_wave_value : int = 50
